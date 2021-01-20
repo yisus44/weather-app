@@ -16,7 +16,9 @@ function forecast({ latitude, longitude } = {}, callback) {
       } else {
         callback(
           undefined,
-          `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees outIt feels like ${body.current.feelslike} degrees out`
+          `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees outIt feels like ${body.current.feelslike} degrees out.
+          Temperature ${body.current.temperature} degrees
+          `
         );
       }
     }
